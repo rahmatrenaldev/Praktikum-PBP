@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Praktikum 1</string>
+    <string name="profile_photo">profile_photo</string>
+    <string name="text_status">text_status</string>
+    <string name="input_name">input_name</string>
+    <string name="show_toast">show_toast</string>
+    <string name="status_active">Status : Active</string>
+    <string name="hallo_user">Hallo, User!</string>
+</resources>
