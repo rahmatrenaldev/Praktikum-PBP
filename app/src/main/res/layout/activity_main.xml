@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:id="@+id/main"
     android:orientation="vertical"
     android:padding="16dp">
 
@@ -17,8 +17,12 @@
         <ImageView
             android:layout_width="60dp"
             android:layout_height="60dp"
+            android:background="3DDC84"
+            android:foreground="#37C677"
             android:src="@mipmap/ic_launcher_round"
-            android:contentDescription="@string/profile_photo" />
+            android:contentDescription="@string/profile_photo"
+            tools:ignore="ContentDescription,
+                ImageContrastCheck" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -46,32 +50,32 @@
 
     <EditText
         android:id="@+id/etNama"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_width="320dp"
+        android:layout_height="50dp"
         android:layout_marginTop="24dp"
-        android:hint="Input Name"
+        android:hint="@string/input_name"
         android:inputType="text"
-        tools:ignore="Autofill" />
+        tools:ignore="Autofill,TextFieldSize" />
 
     <Button
         android:id="@+id/btnToast"
-        android:layout_width="match_parent"
+        android:layout_width="320dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="12dp"
-        android:text="Show Toast" />
+        android:text="@string/show_toast" />
 
     <Button
         android:id="@+id/btnForm"
-        android:layout_width="match_parent"
+        android:layout_width="320dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
-        android:text="Open Form (Explicit Intent)" />
+        android:text="@string/Open_Form" />
 
     <Button
         android:id="@+id/btnBrowser"
-        android:layout_width="match_parent"
+        android:layout_width="320dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
-        android:text="Open Website (Implicit Intent)" />
+        android:text="@string/Open_Website" />
 
 </LinearLayout>
